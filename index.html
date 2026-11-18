@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>탐정사무소 답지</title>
+<style>
+:root{--bg:#17161f;--card:#201e2b;--line:#2d2b3a;--tx:#ece9f1;--sub:#9a96ad;--gold:#e6c15a;--lie:#ff7b7b;--proof:#c49bff;--st:#9fd8ff;--ok:#58d68d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.65;font-size:15px}
+main{max-width:820px;margin:0 auto;padding:28px 16px 60px}
+h1{color:var(--gold);font-size:26px;margin:0 0 4px;letter-spacing:2px}
+.lead{color:var(--sub);margin:0 0 20px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 0 14px}
+.box h2{font-size:16px;color:var(--gold);margin:0 0 6px}
+.box ul{margin:4px 0;padding-left:20px}
+h3.season{color:var(--sub);font-size:13px;letter-spacing:3px;margin:26px 0 8px}
+details.ep{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:0 0 10px}
+details.ep>summary{cursor:pointer;padding:14px 18px;font-weight:800;font-size:16px;list-style:none;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+details.ep>summary::-webkit-details-marker{display:none}
+details.ep>summary::before{content:"▶";color:var(--gold);font-size:12px;transition:transform .15s}
+details.ep[open]>summary::before{transform:rotate(90deg)}
+.diff{color:var(--gold);font-size:13px;font-weight:400}
+.body{padding:0 18px 16px}
+.case{color:var(--sub);margin:0 0 10px}
+details.sp{border:1px dashed var(--line);border-radius:10px;margin:8px 0;padding:0 12px}
+details.sp>summary{cursor:pointer;padding:9px 0;font-weight:700;color:var(--st)}
+details.sp[open]{border-style:solid;background:#1a1924}
+details.sp .in{padding:0 0 12px}
+.stage{margin:10px 0}
+.stage b.n{color:var(--gold)}
+.lie{color:var(--lie);font-weight:700}
+.proof{color:var(--proof);font-weight:700}
+.who{font-weight:800}
+.q{color:var(--sub);font-size:13px}
+.ans{font-size:18px;font-weight:800;color:var(--ok)}
+.tip{color:var(--sub);font-size:13px;margin:6px 0 0}
+footer{color:var(--sub);font-size:12px;text-align:center;margin-top:30px}
+@media (max-width:600px){body{font-size:14px}h1{font-size:22px}details.ep>summary{padding:12px 14px}.body{padding:0 14px 14px}}
+</style>
+</head>
+<body>
+<main>
+<h1>즈키쿠 탐정사무소 · 답지</h1>
+<p class="lead">막힌 화만 펼쳐 보세요. 화마다 <b>힌트 → 모순 정답 → 범인</b> 순서로 한 겹씩 열립니다.</p>
+
+<div class="box">
+<h2>먼저 알아두면 좋은 것</h2>
+<ul>
+<li><b>현장조사는 공짜</b>입니다. 현장 4곳부터 다 보세요. 증거를 찾아야 열리는 질문(🔒)이 많아요.</li>
+<li>용의자마다 <b>첫 질문은 무료</b>, 그다음부터 질문 하나에 -3점입니다.</li>
+<li>추리 탭: ① <span class="lie">거짓 진술</span>을 고르고 ② 그걸 깨는 <span class="proof">근거</span>(진술이나 증거)를 고른 뒤 "이의 있음!". 근거는 아래에 적힌 것 중 <b>하나만</b> 골라도 정답입니다.</li>
+<li>★★★ 화는 모순이 여러 단계예요. 앞 단계를 풀면 누군가에게 <b>추가 질문</b>이 생기고, 그 답도 다음 단계의 거짓 진술로 쓸 수 있습니다.</li>
+<li>4화는 1~3화를 모두 해결하면 결과 화면에 비밀번호가 나옵니다. 5화부터는 앞 화만 깨면 자동으로 열려요.</li>
+</ul>
+</div>
+
+<h3 class="season">SEASON 1</h3>
+
+<details class="ep"><summary>제1화 길드창고에서 사라진 메소 <span class="diff">★</span></summary><div class="body">
+<p class="case">새벽, 길드 창고에서 운영비 5,000만 메소가 사라졌다. 창고 비밀번호를 아는 건 네 명뿐.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">누군가의 "그 시간에 뭘 했는지"가 다른 사람 말과 맞지 않는다. 모두에게 첫 질문(무료)부터 해 보세요.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><span class="lie">거짓</span> <span class="who">티망유</span> "새벽 3시엔 자고 있었다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> <span class="who">쿵즈키</span> "3시 반쯤 티망유가 올라와서 혼냈다" <span class="q">(첫 질문)</span><br>
+　또는 <span class="who">티망유</span> 3번째 질문(영수증을 찾으면 열림)에서 말을 바꾼 진술</div>
+<p class="tip">무료 질문 두 개만으로 풀려서 100점이 가능한 화입니다.</p>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 티망유</p>신입 피요링이 장비가 없어 사냥을 못 가자, 운영비로 장비를 사 주고 나중에 몰래 채워 넣으려 했다. 영수증의 수령인이 피요링인 것도 그래서.</div></details>
+</div></details>
+
+<details class="ep"><summary>제2화 방송 중 끊긴 마이크 케이블 <span class="diff">★</span></summary><div class="body">
+<p class="case">방송 중 23:47, 쿠즈키의 마이크가 끊겼다. 믹서엔 다른 케이블이 꽂혀 있었다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">"그 자리에 없었다"는 사람이, 보지 않았으면 알 수 없는 것을 말했다. 믹서 뒷면부터 조사해 보세요.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><span class="lie">거짓</span> <span class="who">쿵즈키</span> "자기 방에서 노래 듣는 중" 또는 "23시 넘어선 스튜디오 근처도 안 갔다"<br>
+<span class="proof">근거</span> <span class="who">쿵즈키</span> 3번째 질문(믹서 뒷면을 조사하면 열림): "그 <b>분홍</b> 케이블…" ← 탐정은 색을 말한 적이 없다<br>
+　또는 <span class="who">쿠식이</span> 2번째 질문(문 센서를 조사하면 열림): "작은 누군가가 스튜디오로 들어갔다"</div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿵즈키</p>방송 끝나고 노래하려고 노래방 마이크(라벨 CZ = 쿵즈키)를 미리 꽂다가 쿠즈키 마이크 선까지 뽑아 버렸다. 뒤에서 들린 콧노래도 쿵즈키.</div></details>
+</div></details>
+
+<details class="ep"><summary>제3화 말랑말랑고민상담소 사연 조작 사건 <span class="diff">★</span></summary><div class="body">
+<p class="case">구독자 120명인 상담소에 좋아요 300개짜리 사연이 1위에 올랐다. 투표 조작이다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">"자고 있었다"는 사람이 그 시간에 앉아 있던 자리가 있다. 공용 PC 쪽을 조사해 보세요.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><span class="lie">거짓</span> <span class="who">쿠식이</span> "자정엔 자고 있었다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> 증거 <b>공용 PC 방문 기록</b> (00:02~00:10 투표 페이지 수백 번 접속)<br>
+　또는 <span class="who">티망유</span> 3번째 질문: "쿠식이가 '오늘 공용 PC는 내가 쓴다'며 앉아 있었다"</div>
+<p class="tip">현장조사와 무료 질문만으로 100점이 가능합니다.</p>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿠식이</p>쿠즈키 입으로 "멋지다"는 말을 딱 한 번 듣고 싶어서 좋아요를 280번 눌렀다. 사연의 "~인 것이다" 말투와 초안 글씨(2화 응원가 메모와 같은 글씨)도 쿠식이 것.</div></details>
+</div></details>
+
+<h3 class="season">SEASON 2</h3>
+
+<details class="ep"><summary>제4화 사라진 공대 분배금 <span class="diff">★★★</span></summary><div class="body">
+<p class="case">자쿰 공대 수익 2억 메소에서 2,000만이 비었다. 이번 의뢰인은 쿠즈키가 아니다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 1화에서 들어본 거짓말이다. 하지만 이번엔 이게 끝이 아니다.<br>2단계: 세 사건 내내 똑같았던 알리바이. 그 공지는 정말 '그 시간에' 올린 걸까.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b><br><span class="lie">거짓</span> <span class="who">티망유</span> "분배 시각엔 자고 있었다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> 증거 <b>분배 로그</b>, 또는 <span class="who">쿠식이</span> 2번째 질문 "티망유는 접속 중이었다"<br>
+<span class="q">→ 쿠즈키에게 추가 질문이 생김</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">쿠즈키</span> "새벽 2시엔 자유시장에서 공지 올리는 중" (첫 질문 또는 추가 질문)<br>
+<span class="proof">근거</span> 증거 <b>자유시장 공지 (예약 게시)</b> ← 실제 작성은 전날 23:10, 2시엔 자동으로 올라간 것</div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿠즈키</p>2화에서 쿵즈키에게 약속한 엔딩 3분용 마이크(2,000만)를 사 주려고 공대장 수수료를 5%에서 15%로 올렸다. 운영비를 쓰면 1화 때 티망유에게 한 말이 있어서 "멋없어서" 몰래. 1~3화 내내 쓰던 "자유시장 공지" 알리바이도 사실은 예약 게시였다.</div></details>
+</div></details>
+
+<details class="ep"><summary>제5화 즈키쿠 모의고사 유출 사건 <span class="diff">★★★</span></summary><div class="body">
+<p class="case">방송 퀴즈 문제지가 방송 전날 카페에 유출됐다. 범인은 한 명이 아니다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 검수 메모의 글씨는 누구 글씨였지? 그 사람은 문제지를 '본 적 없다'고 했다.<br>2단계: '안 들어갔다'는 사람의 흔적이 사진 속에, 책상 위에, 단톡에 남아 있다.<br>3단계: '본 적 없다'는 사람이 두 사람만 아는 정답을 말했다.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b> (미끼: 티망유는 사실 검수자였을 뿐)<br><span class="lie">거짓</span> <span class="who">티망유</span> "문제지 본 적 없다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> 증거 <b>검수 메모</b> (티망유 글씨), 또는 <span class="who">쿠즈키</span> 3번째 질문 "7번 정답은 나와 검수자만 안다"<br>
+<span class="q">→ 쿵즈키에게 추가 질문이 생김</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">쿵즈키</span> "쿠즈키 방 안 들어감" (2번째 질문) 또는 추가 질문 "방 앞을 지나간 것"<br>
+<span class="proof">근거</span> 증거 <b>유출 사진</b>(모니터에 쥐귀 머리띠 반사), <b>단톡 기록</b>, <b>책상의 분홍 반짝이</b> 중 아무거나</div>
+<div class="stage"><b class="n">3단계</b><br><span class="lie">거짓</span> <span class="who">쿠식이</span> "문제지 본 적 없다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> <span class="who">쿠식이</span> 3번째 질문 "7번은 주황버섯" ← 아직 안 고친 오타의 정답, 또는 증거 <b>단톡 기록</b></div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿵즈키 + 쿠식이 (2명 선택 후 확인)</p>쿵즈키가 1등 상품(노래방 이용권)이 탐나서 문제지를 찍었고, 답을 몰라 쿠식이에게 보냈다. 쿠식이는 카페에 올리면 누가 답을 달아줄 줄 알았는데 '정보통'이 되어 버렸다.</div></details>
+</div></details>
+
+<details class="ep"><summary>제6화 길드하우스 정전 사건 <span class="diff">★★★</span></summary><div class="body">
+<p class="case">방송 중 길드하우스 전체가 꺼졌다. 차단기는 누군가 손으로 내렸다. 이번엔 증거가 거짓말을 한다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 센서 시계가 틀어져 있다. '정전 뒤'라는 말은 로그 시각을 빼고 다시 계산해 보라.<br>2단계: '로그가 증명한다'는 사람이 로그의 시계를 돌려놨다. 그럼 그 사람의 '정전 뒤'는 언제인가.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b> (미끼: 쿵즈키는 시계 때문에 억울한 것)<br><span class="lie">거짓</span> <span class="who">쿵즈키</span> "창고는 정전 뒤에만 갔다" (2번째 질문, 창고 문 센서 로그를 조사하면 열림)<br>
+<span class="proof">근거</span> 증거 <b>센서 시계 1시간 빠름</b>, 또는 <span class="who">쿠식이</span> 3번째 질문 "정전 직전 지하 계단에서 작은 발소리"<br>
+<span class="q">→ 티망유에게 추가 질문이 생김</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">티망유</span> "정전 땐 부엌, 센서 로그 보면 알 것" (첫 질문 또는 추가 질문)<br>
+<span class="proof">근거</span> 증거 <b>센서 시계</b>(어제 18:20에 누군가 돌려놓음) 또는 <b>차단기</b>(손잡이에 보리차 냄새)</div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 티망유</p>쿠즈키가 방송에서 "피요링 장비를 사 준 사람"(1화)을 공개하려 한다는 걸 쿠식이에게 듣고, 피요링이 부담을 느낄까 봐 센서 시계를 미리 돌려놓고 방송 중 차단기를 내렸다.</div></details>
+</div></details>
+
+<h3 class="season">SEASON 3</h3>
+
+<details class="ep"><summary>제7화 쿠식이의 수상한 레벨업 <span class="diff">★★★</span></summary><div class="body">
+<p class="case">만년 용기사 쿠식이의 레벨이 하룻밤 사이 12나 올랐다. 운영 측 경고 메일까지 왔다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 쿠식이 계정을 만질 수 있는 사람은 누구였나. 낮 기록과 쿠식이의 말을 같이 보라.<br>2단계: 누군가 키를 눌러 놓고 옆에서 무엇을 하고 있었다. 채팅 한 줄, 키보드 자국, 새벽의 소리를 보라.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b> (미끼: 쿠즈키는 낮에 정상 파티로 도와준 것뿐)<br><span class="lie">거짓</span> <span class="who">쿠즈키</span> "쿠식이 계정 비밀번호는 모른다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> <span class="who">쿠식이</span> 2번째 질문 "쿠즈키에게 비밀번호 알려줬다", 또는 증거 <b>레벨업 기록</b>(낮 14~15시 쿠즈키와 파티)<br>
+<span class="q">→ 쿵즈키에게 추가 질문이 생김</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">쿵즈키</span> "새벽엔 방에서 잤다" (첫 질문) 또는 추가 질문 "노래도 안 했어"<br>
+<span class="proof">근거</span> 증거 <b>새벽 채팅</b>('라~ 라라~♪'), <b>키보드 자국</b>(탬버린·분홍 반짝이), 또는 <span class="who">티망유</span> 2번째 질문 "새벽 3시쯤 '짤랑' 소리"</div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿵즈키</p>5화 때 자기 때문에 쿠식이까지 혼난 게 미안해서, 쿠즈키가 로그아웃 안 하고 간 공용 PC에서 공격 키에 탬버린을 올려 두고 옆에서 노래 연습을 했다. 채팅은 신나서 그만 친 것.</div></details>
+</div></details>
+
+<details class="ep"><summary>제8화 피요링 첫 방송 대본 실종 <span class="diff">★★★</span></summary><div class="body">
+<p class="case">피요링의 첫 게스트 방송 5분 전, 밤새 연습한 자기소개 대본이 사라졌다.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 22시에 쿠즈키가 본 대본은 정말 '원본'이었을까. 인쇄 기록의 시각을 보라.<br>2단계: 젖은 원본 조각의 손글씨는 누구의 것인가. 그리고 '기계를 못 다룬다'는 사람의 지난 기록은.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b> (쿠즈키는 거짓말이 아니라 착각)<br><span class="lie">거짓</span> <span class="who">쿠즈키</span> "22시 리허설 때 원본 대본은 멀쩡했다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> 증거 <b>프린터 기록</b> (21:50 '수정2' 재인쇄 → 22시에 본 건 원본이 아님)<br>
+<span class="q">→ 쿠식이에게 추가 질문이 생김</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">쿠식이</span> "대본 근처에 간 적 없다" (첫 질문) 또는 추가 질문 "프린터는 쓸 줄 모른다"<br>
+<span class="proof">근거</span> 증거 <b>젖은 원본 조각</b>(쿠식이 글씨), 또는 <span class="who">티망유</span> 2번째 질문 "3화 때 공용 PC로 280번 클릭"</div>
+<p class="tip">싱크대의 '쿵즈키' 컵은 미끼입니다. 쿠식이가 가장 가까운 컵을 썼을 뿐.</p>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿠식이</p>대본의 '존경하는 선배' 목록에 자기만 없어서 한 줄 써 넣으려다 주스를 쏟았다. 공용 PC로 다시 뽑으면서 자기 줄을 넣었는데, 들킬까 봐 방송 직전 갑옷 속에 숨겼다. 피요링은 쿠식이 이야기를 마지막에 따로 하려고 아껴 둔 것이었다.</div></details>
+</div></details>
+
+<details class="ep"><summary>제9화 사라진 탐정 수첩 <span class="diff">★★★</span></summary><div class="body">
+<p class="case">1~8화 기록이 담긴 탐정 수첩이 사라졌다. 이번 용의자는 탐정 본인.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 먼저 탐정의 결백부터. 쿵즈키가 본 '탐정'은 무엇을 입고 있었나. 그 옷은 그 시각 어디 있었나.<br>2단계: 주문자 CZ는 둘 중 하나다. 23시대에 한 명은 어디 있었는지 증인이 있다.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b> (쿵즈키의 목격은 어두운 복도에서의 착각)<br><span class="lie">거짓</span> <span class="who">쿵즈키</span> "23시쯤 탐정 코트 입은 사람이 수첩 들고 나갔다" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> 증거 <b>세탁소 접수증</b>, 또는 <span class="who">티망유</span> 2번째 질문 "20시쯤 탐정이 코트 들고 세탁소 갔다"<br>
+<span class="q">→ 쿠즈키에게 추가 질문이 생김</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">쿠즈키</span> "어젯밤 내내 스튜디오에 있었다" (첫 질문 또는 추가 질문)<br>
+<span class="proof">근거</span> 증거 <b>가죽 공방 주문서</b> (23:20, 주문자 CZ)<br>
+<span class="q">CZ는 쿠즈키 아니면 쿵즈키. 쿵즈키는 23~24시에 방에서 노래하다 티망유에게 문 두드림을 당했으니 남는 건 쿠즈키.</span></div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 쿠즈키</p>가져간 건 맞지만 이유는 "내일까지" 비밀. 수첩은 돌아오지 않은 채 10화로 이어진다.</div></details>
+</div></details>
+
+<details class="ep"><summary>제10화 범인은 이 안에 전부 있다 <span class="diff">★★★★</span></summary><div class="body">
+<p class="case">길드하우스에서 물건이 하나씩 사라지고, 탐정에게는 정체불명의 의뢰가 계속 날아온다. 시즌 3 마지막 사건.</p>
+<details class="sp"><summary>💡 힌트만 보기</summary><div class="in">1단계: 사라진 것 중 하나는 모자다. 창고의 주문서는 몇 개라고 하나.<br>2단계: 오늘 스튜디오 PC에 저장된 파일 하나. 그 목소리는 누구인가.<br>3단계: 부엌을 보라. 숨겨진 접시와 떡의 양은 몇 명분인가.<br>4단계: 의뢰서는 언제, 어떻게, 어느 기기에서 보내졌나. 4화를 떠올려라.<br>지목: 범인이 몇 명인지 화면에 안 나옵니다. 길드원은 4명인데 모자·접시는 6개.</div></details>
+<details class="sp"><summary>✅ 모순 정답</summary><div class="in">
+<div class="stage"><b class="n">1단계</b><br><span class="lie">거짓</span> <span class="who">쿠식이</span> "꺼낸 건 내 생일 파티 모자 하나뿐" <span class="q">(첫 질문)</span><br>
+<span class="proof">근거</span> 증거 <b>파티용품 주문서</b> (파티 모자 ×6)<br><span class="q">→ 쿵즈키에게 추가 질문</span></div>
+<div class="stage"><b class="n">2단계</b><br><span class="lie">거짓</span> <span class="who">쿵즈키</span> "오늘 노래 연습 안 했다" (2번째 질문) 또는 추가 질문 "노래도 안 했어"<br>
+<span class="proof">근거</span> 증거 <b>감사송 녹음</b>('탐정님_감사송_take14'), 또는 <span class="who">쿠즈키</span> 3번째 질문 "오후에 쿵즈키도 PC 썼다"<br><span class="q">→ 티망유에게 추가 질문</span></div>
+<div class="stage"><b class="n">3단계</b><br><span class="lie">거짓</span> <span class="who">티망유</span> "오늘 저녁은 떡볶이 4인분" (2번째 질문 또는 추가 질문)<br>
+<span class="proof">근거</span> 증거 <b>접시 6개</b> (떡도 6인분)<br><span class="q">→ 쿠즈키에게 추가 질문</span></div>
+<div class="stage"><b class="n">4단계</b><br><span class="lie">거짓</span> <span class="who">쿠즈키</span> "가짜 의뢰는 모른다" (첫 질문) 또는 추가 질문 "의뢰들은 내가 보낸 게 아니다"<br>
+<span class="proof">근거</span> 증거 <b>가짜 의뢰서</b> (예약 발송, 보낸 기기는 스튜디오 PC)</div>
+</div></details>
+<details class="sp"><summary>🎯 범인 & 결말</summary><div class="in"><p class="ans">범인: 4명 전원 (쿠즈키·티망유·쿵즈키·쿠식이)</p>일부만 고르면 고른 사람이 "나만이 아니다"라며 힌트를 줍니다. 정체는 탐정사무소 10번째 사건 기념 서프라이즈 파티. 6인분은 탐정과 피요링 몫까지였고, 9화의 수첩은 새 가죽 커버와 모두의 메시지를 달고 돌아온다.</div></details>
+</div></details>
+
+<footer>즈키쿠 탐정사무소 공식 답지 · 게임 v1.9.1 기준</footer>
+</main>
+</body>
+</html>
